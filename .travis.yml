@@ -9,12 +9,7 @@ addons:
 
 matrix:
   include:
-  - os: linux
-    compiler: gcc
-    env: COMPILER=g++
-  - os: linux
-    compiler: clang
-    env: COMPILER=clang++
+  - os: osx
 
 script:
   - grep -v AX_CXX_COMPILE_STDCXX <configure.ac >tmp && mv tmp configure.ac
